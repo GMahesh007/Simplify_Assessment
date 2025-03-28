@@ -28,13 +28,9 @@ pip install -r requirements.txt
 ```
 
 ### **4. Set Up the Database**
-#### ✅ Option 1: MongoDB  
+#### ✅ MongoDB  
 - Ensure MongoDB is installed and running locally or use a cloud database like MongoDB Atlas.
 - Update `database.py` with your MongoDB connection string.
-
-#### ✅ Option 2: PostgreSQL  
-- Install PostgreSQL.
-- Update `database.py` with PostgreSQL connection details.
 
 ### **5. Run the FastAPI Server**
 ```sh
@@ -115,23 +111,6 @@ docker build -t fastapi-chat .
 docker run -p 8000:8000 fastapi-chat
 ```
 
-### **2. Deploy to Cloud**
-#### ✅ **Using Render/Vercel**
-- Push your code to GitHub.
-- Connect the repo to **Render** or **Vercel**.
-- Set up a **Python environment** and start the application with:
-```sh
-uvicorn main:app --host 0.0.0.0 --port 8000
-```
-
-#### ✅ **Deploying on AWS EC2**
-- Launch an EC2 instance.
-- Install Python & FastAPI:
-```sh
-sudo apt update
-sudo apt install python3-pip
-pip3 install fastapi uvicorn
-```
 - Run FastAPI:
 ```sh
 uvicorn main:app --host 0.0.0.0 --port 8000
@@ -139,27 +118,12 @@ uvicorn main:app --host 0.0.0.0 --port 8000
 
 ---
 
-## 📌 Submission Instructions
-
-1. Upload your project to **GitHub** (ensure README.md is included).
-2. Test your API with **curl** or **Postman** to confirm it’s working.
-3. Share the **GitHub link** or create a **ZIP file** of your project.
-4. Submit your **README**, **API documentation**, and **deployment notes**.
-
----
-
 ## 📌 Technologies Used
 - **FastAPI** – Web framework
-- **MongoDB/PostgreSQL** – Database
+- **MongoDB** – Database
 - **OpenAI GPT** – Chat summarization
 - **Docker** – Containerization
 - **Uvicorn** – ASGI server
-
----
-
-## 📌 Contributors
-- **[Your Name]** – Developer
-- **[Your Teammates]** – Contributors
 
 ---
 
